@@ -38,7 +38,7 @@ body{
 /*=====cv__left=====*/
 
 .cv__left{
-    width: 283.5px;
+    width: 30%;
     background: rgba(191, 191, 191, 0.1);
 }
 
@@ -70,7 +70,7 @@ body{
 }
 
 .contacts__inner{
-    padding-left: 35px;
+    padding-left: 41px;
     position: relative;
     margin-left: 20px;
     margin-bottom: 18px;
@@ -88,8 +88,8 @@ body{
     content: '';
     display: block;
 
-    width: 24px;
-    height: 25px;
+    width: 32px;
+    height: 32px;
 
     position: absolute;
     left: 0;
@@ -98,19 +98,15 @@ body{
 }
 
 .email:before{
-    background: url('../image/css_sprites.png') -10px -10px;
-}
-
-.site:before{
-    background: url('../image/css_sprites.png') -10px -145px;
+    background: url('../image/css_sprites.png') -10px -192px;
 }
 
 .number:before{
-    background: url('../image/css_sprites.png') -10px -55px;
+    background: url('../image/css_sprites.png') -10px -244px;
 }
 
 .adress:before{
-    background: url('../image/css_sprites.png') -10px -100px;
+    background: url('../image/css_sprites.png') -10px -296px;
 }
 
 .contacts__content{
@@ -120,11 +116,67 @@ body{
     line-height: 18px;
 }
 
+/*socials*/
+
+.social{
+    margin: 60px 0 0 24px;
+}
+
+.social__title{
+    display: block;
+    font-size: 13px;
+    color: #79819A;
+    margin-bottom: 20px;
+}
+
+.social__item{
+    margin-bottom: 20px;
+}
+
+.social__link{
+    display: inline-block;
+    color: #79819A;
+    font-size: 13px;
+    text-decoration: none;
+    padding: 7px 0 7px 45px;
+    position: relative;
+}
+
+.social__link:hover{
+    color: #525972;
+}
+
+.social__link:before{
+    content: '';
+    display: block;
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 30px;
+    height: 30px;
+}
+
+.instagram:before{
+    background: url('../image/css_sprites.png') -10px -92px;
+}
+
+.telegram:before{
+    background: url('../image/css_sprites.png') -10px -142px;
+}
+
+.git:before{
+    background: url('../image/css_sprites.png') -10px -42px;
+}
+
+
 /*=====cv__right=====*/
 
 .cv__right{
     padding-left: 20px;
-    width: 670px;
+    width: 70%;
 }
 
 .name{
@@ -151,15 +203,16 @@ body{
     font-size: 24px;
     line-height: 25px;
     font-weight: 600;
-    padding-bottom: 15px;
+    padding-bottom: 22px;
     position: relative;
+    margin-top: 50px;
 }
 
 .about__title:before{
     content: '';
     display: block;
 
-    width: 70px;
+    width: 80px;
     height: 8px;
     background: #FFBDA8;
     border-radius: 2px;
@@ -180,7 +233,7 @@ body{
 }
 
 .work__logo{
-    width: 210px;
+    width: 45%;
 }
 
 .work__data{
@@ -194,8 +247,7 @@ body{
 }
 
 .data{
-    padding-left: 30px;
-    margin-right: 20px;
+    padding-left: 26px;
     position: relative;
     color: #47516B;
 }
@@ -218,15 +270,60 @@ body{
 .map{
     text-decoration: none;
     color: #79819A;
+    position: relative;
+    padding-left: 15px;
+    margin-left: 13px;
 }
 
 .map:hover{
     text-decoration: underline;
 }
 
+.map:before{
+    display: block;
+    content: '';
+
+    position: absolute;
+    left: 0;
+    top: -4px;
+
+    width: 12px;
+    height: 12px;
+    background: url('../image/css_sprites.png') -10px -10px;
+}
+
 .company{
     padding-left: 90px;
     margin-top: 30px;
+    position: relative;
+}
+
+.company:before{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 60px;
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.agent:before{
+    background: url('../image/css_sprites.png') -10px -428px;
+}
+
+.econom:before{
+    background: url('../image/css_sprites.png') -10px -588px;
+}
+
+.univer:before{
+    background: url('../image/css_sprites.png') -10px -508px;
+}
+
+.hilel:before{
+    background: url('../image/css_sprites.png') -10px -348px;
 }
 
 .post{
@@ -248,7 +345,8 @@ body{
 }
 
 .work__content{
-    padding: 0 0 0 60px;
+    padding: 0 0 0 20px;
+    width: 55%;
 }
 
 .work__text{
